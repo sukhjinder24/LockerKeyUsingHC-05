@@ -1,0 +1,2 @@
+rootProject.name = "Locker Key"
+include ':app'

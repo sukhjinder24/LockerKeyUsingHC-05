@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Locker Key</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="bt_connection">Set-Up Connection</string>
+    <string name="switch_off">SWITCH OFF</string>
+    <string name="connect">CONNECT</string>
+    <string name="add_device_token">Add Device Token</string>
+    <string name="enter_new_device_token">Enter New Device Token</string>
+    <string name="re_enter_device_token">Re-Enter Device Token</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="token">Token</string>
+    <string name="locker_number">Locker Number</string>
+    <string name="connection_problem">Connection Problem</string>
+    <string name="retry">Retry</string>
+    <string name="connecting_please_wait">Connecting... Please wait.</string>
+    <string name="OtpTime">Enter this One Time Password to open your Locker.\n Note: This OTP is valid for 60 seconds only</string>
+</resources>

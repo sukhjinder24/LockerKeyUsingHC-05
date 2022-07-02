@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/teal_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="1.5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="@string/bt_connection"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addProfile"
+            android:layout_width="0dp"
+            android:text="+"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:padding="2dp"
+            android:onClick="addProfile"
+            android:backgroundTint="@color/purple_500"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:onClick="pairedList"
+        android:backgroundTint="@color/purple_500"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <ListView
+            android:id="@+id/devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/connecting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connecting_please_wait"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+</LinearLayout>
